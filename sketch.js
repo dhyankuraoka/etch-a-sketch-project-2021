@@ -25,8 +25,10 @@ addColorChange();
 const resetBtn = document.querySelector('#resetButton');
 resetButton.addEventListener('click', () =>{
 	//take the desired grid size.
-	let gridSize = prompt('Give me the grid definition');
-
+	let gridSize = 101;
+	while(gridSize >100 || gridSize ==0){
+			gridSize = prompt('Give me the grid definition, max size = 100');
+		}	
 	//reset the grid.
 	document.getElementById('container').innerHTML = "";
 
@@ -46,9 +48,8 @@ resetButton.addEventListener('click', () =>{
 	document.getElementById('container').style.gridTemplateColumns = `repeat(${gridSize},${boxSize}px)`
 
 	addColorChange();
-
-
-});
+}
+)
 
 //function to add the color change to each box.
 function addColorChange() {
