@@ -1,0 +1,39 @@
+body {
+	display: grid;
+	justify-items: center;
+	grid-template-rows: 100px, auto;
+}
+
+#resetButton {
+	align-content: center;	
+	width: 200px;
+	margin: 25px;
+}
+
+.box {
+	display: flex;
+	align-content: center;
+	/*border: 2.5px solid black; */
+	height: 50px;
+	width: 50px;
+	margin:0px;
+	background-color: blue;
+
+	
+}
+
+p {
+	color:blue;
+}
+
+#container {
+	display: grid;
+	column-gap: 0;
+
+	
+}
+
+
+.mouseOn {
+	background-color: red;
+}
